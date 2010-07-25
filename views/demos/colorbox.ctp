@@ -20,7 +20,7 @@ echo $this->Html->css(array('/flickr_demos/css/colorbox'), null, array('inline' 
         </h1>
         <?php echo $this->element('demo_nav'); ?> 
 
-        <p>Click a thumbnail for Colorbox action...</p>
+        <p><strong>Click a thumbnail for Colorbox action...</strong></p>
 
         <h3>Controller:</h3>
         <pre>

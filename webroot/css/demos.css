@@ -30,6 +30,9 @@ pre {
 	padding: 20px;
 	color: #fff;
 }
+p {
+	font-size: .9em;
+}
 div#page {
 	width: 900px;
 	background-color: #fff;
@@ -43,6 +46,13 @@ div#page {
 }
 #demohome {
 	padding: 20px;
+}
+#footer {
+	text-align: center;
+	margin: 0 0 20px 0;
+	padding-top: 10px;
+	font-size: .7em;
+	clear: both;
 }
 
 /*galleriffic*/
