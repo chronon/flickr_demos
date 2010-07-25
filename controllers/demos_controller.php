@@ -9,6 +9,19 @@ Class DemosController extends FlickrDemosAppController {
         $this->layout = 'demos';
     }
 
+    public function index() {
+
+    }
+
+    public function raw() {
+	    $params = array(
+            'tags' => 'Public',
+            'per_page' => 15,
+        );
+		$photos = $this->Flickr->flickrRequest($params);
+		$this->set('photos', $photos);
+	}
+
 	public function galleriffic() {
 	    $params = array(
             'tags' => 'Public',
@@ -35,6 +48,7 @@ Class DemosController extends FlickrDemosAppController {
 		$this->set('sets', $sets);
 	}
 
+    // the function photostack.js does an AJAX call to for the photos:
 	public function psfiles() {
 	    $this->autoRender = false;
 	    $params = array(
@@ -50,7 +64,7 @@ Class DemosController extends FlickrDemosAppController {
             $files[] = $base.'.jpg';
         }
 
-        // for local files:
+        // for local files, something like this
         // $base = APP.'plugins'.DS.'flickr'.DS.'webroot'.DS;
         // $base .= 'demos/photostack/';
         //

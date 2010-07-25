@@ -19,7 +19,7 @@ echo $this->Html->css(array('/flickr_demos/css/galleriffic'), null, array('inlin
 		    Flickr CakePHP Plugin:
 		    <a href="http://www.twospy.com/galleriffic/">Galleriffic</a> Demo
 		</h1>
-		<?php echo $this->element('demo_nav'); ?>
+		<?php echo $this->element('demo_nav'); ?> 
 
         <div id="gallery" class="content">
         	<div id="controls" class="controls"></div>
@@ -46,7 +46,7 @@ echo $this->Html->css(array('/flickr_demos/css/galleriffic'), null, array('inlin
                     'caption' => 'flickr_title'
                 )
             );
-            ?>
+            ?> 
             </ul>
         </div>
 

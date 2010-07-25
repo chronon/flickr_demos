@@ -4,7 +4,7 @@ html, body {
 }
 body, #demohead {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-	background-color: #eee;
+	background-color: #ccc;
 	color: #444;
 }
 a {
@@ -39,6 +39,10 @@ div#page {
 #demohead {
 	padding: 20px;
 	font-size: 1.4em;
+	background: #fff;
+}
+#demohome {
+	padding: 20px;
 }
 
 /*galleriffic*/
@@ -56,12 +60,14 @@ div#cb-content {
 	width: 600px;
 	margin-left: 10px;
 	float: left;
+	background: #fff;
+	padding: 20px;
 }
 div#cb-photos {
-	background-color: #eee;
+	background-color: #fff;
 	width: 225px;
 	float: right;
-	margin: 20px 10px 0 0;
+	margin: 0 10px 0 0;
 	text-align: center;
 }
 div#cb-photos div {

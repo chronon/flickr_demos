@@ -18,7 +18,9 @@ echo $this->Html->css(array('/flickr_demos/css/colorbox'), null, array('inline' 
             Flickr CakePHP Plugin:
             <a href="http://colorpowered.com/colorbox/">Colorbox</a> Demo
         </h1>
-        <?php echo $this->element('demo_nav'); ?>
+        <?php echo $this->element('demo_nav'); ?> 
+
+        <p>Click a thumbnail for Colorbox action...</p>
 
         <h3>Controller:</h3>
         <pre>
@@ -53,7 +55,7 @@ echo $this->Flickr->getPhotos(
             array(),
             array()
         );
-        ?>
+        ?> 
     </div>
 
 </div><!-- /page -->
