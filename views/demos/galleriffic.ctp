@@ -59,8 +59,8 @@ public function galleriffic() {
         'tags' => 'Public',
         'per_page' => 20,
     );
-	$photos = $this->Flickr->flickrRequest($params);
-	$this->set('photos', $photos);
+    $photos = $this->Flickr->flickrRequest($params);
+    $this->set('photos', $photos);
 }
         </pre>
 

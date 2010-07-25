@@ -57,7 +57,7 @@ public function photostack() {
         'method' => 'flickr.photosets.getList',
     );
     $sets = $this->Flickr->flickrRequest($params);
-	$this->set('sets', $sets);
+    $this->set('sets', $sets);
 }
         </pre>
         <pre>

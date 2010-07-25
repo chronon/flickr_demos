@@ -10,7 +10,7 @@ Class DemosController extends FlickrDemosAppController {
     }
 
     public function index() {
-
+        // hi.
     }
 
     public function raw() {
