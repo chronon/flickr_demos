@@ -1,9 +1,13 @@
 <?php
-Class DemosController extends FlickrAppController {
+Class DemosController extends FlickrDemosAppController {
 
     public $components = array('Flickr.Flickr');
     public $helpers = array('Flickr.Flickr');
     public $uses = array();
+
+    public function beforeFilter() {
+        $this->layout = 'demos';
+    }
 
 	public function galleriffic() {
 	    $params = array(

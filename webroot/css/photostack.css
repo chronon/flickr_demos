@@ -42,7 +42,7 @@ body{
 }
 /* Close button for preview mode */
 a.ps_close{
-	background:#000 url(/flickr/img/photostack/close.png) no-repeat center center;
+	background:#000 url('/flickr_demos/img/photostack/close.png') no-repeat center center;
 	cursor:pointer;
 	width:56px;
 	height:56px;
@@ -66,7 +66,7 @@ a.ps_next_photo{
 	margin:-28px 0 0 -28px;
 	z-index:200;
 	cursor:pointer;
-	background:#000 url(/flickr/img/photostack/next_photo.png) no-repeat 50% 50%;
+	background:#000 url('/flickr_demos/img/photostack/next_photo.png') no-repeat 50% 50%;
 	opacity:0.6;
 	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);	
     -moz-border-radius:10px;
@@ -116,11 +116,11 @@ a.ps_close:hover{
 }
 .ps_slider a.prev{
     left:-30px;
-    background-image:url(/flickr/img/photostack/prev.png);
+    background-image:url('/flickr_demos/img/photostack/prev.png');
 }
 .ps_slider a.next{
     right:-30px;
-    background-image:url(/flickr/img/photostack/next.png);
+    background-image:url('/flickr_demos/img/photostack/next.png');
 }
 .ps_slider .ps_album{
 	width:140px;
@@ -159,7 +159,7 @@ a.ps_close:hover{
 .ps_slider .ps_album .ps_desc{
 	display:block;
 	color:#666;
-	background:#111 url(/flickr/img/photostack/overlay.png) no-repeat bottom right;
+	background:#111 url('/flickr_demos/img/photostack/overlay.png') no-repeat bottom right;
 	height:200px;
 	margin-top:10px;
 	text-align:left;
@@ -190,7 +190,7 @@ a.ps_close:hover{
 	border-bottom:1px solid #000;
 }
 .ps_slider .loading{
-	background:#121212 url(/flickr/img/photostack/loading.gif) no-repeat 50% 50%;
+	background:#121212 url('/flickr_demos/img/photostack/loading.gif') no-repeat 50% 50%;
 	position:absolute;
 	top:0px;
 	left:0px;

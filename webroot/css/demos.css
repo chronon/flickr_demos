@@ -2,7 +2,7 @@ html, body {
 	margin:0;
 	padding:0;
 }
-body {
+body, #demohead {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
 	background-color: #eee;
 	color: #444;
@@ -36,6 +36,11 @@ div#page {
 	margin: 20px auto;
 }
 
+#demohead {
+	padding: 20px;
+	font-size: 1.4em;
+}
+
 /*galleriffic*/
 div#container {
 	padding: 20px;
@@ -64,4 +69,22 @@ div#cb-photos div {
 }
 div#cb-photos a img {
 	border: 0;
+}
+
+/*photostack*/
+#demo-code {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	margin-top: 120px;
+	background: #000;
+}
+#demo-code h3 {
+	color: #333;
+	background: #fff;
+	margin: 30px 0 0 0;
+	font-size: 2em;
+	padding: 10px;
+}
+#demo-code pre {
+	margin: 0;
+	font-size: 1.2em;
 }

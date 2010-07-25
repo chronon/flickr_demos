@@ -1,3 +1,6 @@
+#thumbs, #gallery {
+	margin-top: 20px;
+}
 div.content {
 	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
 	display: none;

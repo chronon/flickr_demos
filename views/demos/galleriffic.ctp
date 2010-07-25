@@ -1,22 +1,25 @@
 <?php
 echo $this->Html->script(
     array(
-        '/flickr/js/jquery-1.3.2.min',
-        '/flickr/js/jquery.galleriffic',
-        '/flickr/js/jquery.opacityrollover',
-        '/flickr/js/demo.galleriffic'
+        'http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js',
+        '/flickr_demos/js/galleriffic/jquery.galleriffic',
+        '/flickr_demos/js/galleriffic/jquery.opacityrollover',
+        '/flickr_demos/js/galleriffic/demo.galleriffic'
     ),
     array('inline' => false)
 );
-echo $this->Html->css(
-    array('/flickr/css/demos','/flickr/css/galleriffic-2'),
-    null,
-    array('inline' => false)
-);
+echo $this->Html->css(array('/flickr_demos/css/galleriffic'), null, array('inline' => false));
 ?>
+
 <div id="page">
+
 	<div id="container">
-		<h1>Flickr CakePHP Plugin - <a href="http://www.twospy.com/galleriffic/">Galleriffic</a> Demo</h1>
+
+		<h1>
+		    Flickr CakePHP Plugin:
+		    <a href="http://www.twospy.com/galleriffic/">Galleriffic</a> Demo
+		</h1>
+		<?php echo $this->element('demo_nav'); ?>
 
         <div id="gallery" class="content">
         	<div id="controls" class="controls"></div>
@@ -48,16 +51,21 @@ echo $this->Html->css(
         </div>
 
         <div style="clear: both;"></div>
-                <h3>Controller:</h3>
-                <pre>
-$params = array(
-    'tags' => 'Public',
-    'per_page' => 20,
-);
-$photos = $this->Flickr->flickrRequest($params);
-                </pre>
-                <h3>Helper:</h3>
-                <pre>
+
+        <h3>Controller:</h3>
+        <pre>
+public function galleriffic() {
+    $params = array(
+        'tags' => 'Public',
+        'per_page' => 20,
+    );
+	$photos = $this->Flickr->flickrRequest($params);
+	$this->set('photos', $photos);
+}
+        </pre>
+
+        <h3>Helper:</h3>
+        <pre>
 echo $this->Flickr->getPhotos(
     $photos,
     array('type' => 'li'),
@@ -71,6 +79,8 @@ echo $this->Flickr->getPhotos(
         'caption' => 'flickr_title'
     )
 );
-                </pre>
-    </div>
-</div>
+    </pre>
+
+    </div><!-- /container -->
+
+</div><!-- /page -->
