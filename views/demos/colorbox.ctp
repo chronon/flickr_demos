@@ -50,10 +50,7 @@ echo $this->Flickr->getPhotos(
         echo $this->Flickr->getPhotos(
             $photos,
             array('type' => 'div'),
-            array('rel' => 'example1', 'title' => 'flickr_title'),
-            array(),
-            array(),
-            array()
+            array('rel' => 'example1', 'title' => 'flickr_title')
         );
         ?> 
     </div>

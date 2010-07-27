@@ -19,9 +19,9 @@
     'format' => 'php_serial',
     'extras' => 'description, date_taken'
 )
-    </pre>
+        </pre>
 
-        <p>All defaults can be overridden/replaced in your controller. See the docs for my <a href="http://github.com/chronon/flickr">Flickr plugin</a> and the <a href="http://www.flickr.com/services/api/">Flickr API</a> for additional information.
+        <p>All defaults can be overridden/replaced in your controller. See the docs for my <a href="http://github.com/chronon/flickr">Flickr plugin</a> and the <a href="http://www.flickr.com/services/api/">Flickr API</a> for additional information.</p>
 
         <p>For more information on how to use and customize any of the demo galleries you see here, check the developer websites below (and thank them for their excellent work!):</p>
 
