@@ -14,7 +14,7 @@
     <?php echo $content_for_layout; ?>
 
     <div id="footer">
-        <a href="http://chronon.com">chronon</a> made this.
+        <a href="http://chronon.com">chronon</a> made this. <a href="http://technokracy.net">technokracy</a> might have something else.
     </div>
 
 </body>
