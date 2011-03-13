@@ -6,21 +6,21 @@ The [source code][5] for these demos is freely available, so it should be very e
 
 When viewing the controller code for each demo, the $params array is merged with some defaults I've set in /app/bootstrap.php. Setting defaults for this Flickr plugin is totally optional, but makes for less code in your controller. The defaults I've set for all of these demos is:
 
-    'Flickr.defaults', array(
-        'api_key' => '111122223333aaaabbbbccccdddd',
-        'user_id' => '1234567@N66',
-        'method' => 'flickr.photos.search',
-        'format' => 'php_serial',
-        'extras' => 'description, date_taken'
-    )
+	'Flickr.defaults', array(
+		'api_key' => '111122223333aaaabbbbccccdddd',
+		'user_id' => '1234567@N66',
+		'method' => 'flickr.photos.search',
+		'format' => 'php_serial',
+		'extras' => 'description, date_taken'
+	)
 
 
 All defaults can be overridden/replaced in your controller. See the docs for my [Flickr plugin][4] and the [Flickr API][6] for additional information.
 For more information on how to use and customize any of the demo galleries you see here, check the developer websites below (and thank them for their excellent work!):
 
-*   [Colorbox][7]
-*   [Galleriffic][8]
-*   [Photostack][9]
+*	[Colorbox][7]
+*	[Galleriffic][8]
+*	[Photostack][9]
 
  [1]: http://jquery.com/
  [2]: http://flickr.com/
