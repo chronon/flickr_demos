@@ -6,6 +6,7 @@ Class DemosController extends FlickrDemosAppController {
 	public $uses = array();
 
 	public function beforeFilter() {
+		parent::beforeFilter();
 		$this->layout = 'demos';
 	}
 
